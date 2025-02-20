@@ -2,7 +2,7 @@ li {
   all: unset;
 }
 .MainPage {
-  margin: 56px 0 43px 0;
+  margin: 56px 0 0 0;
 }
 .header__top {
   display: flex;
@@ -78,4 +78,138 @@ li {
   font-weight: 600;
   line-height: 16.94px;
   letter-spacing: 0;
+}
+
+.profile_card {
+  position: relative;
+}
+.background_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile_card_slider {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.slider_active {
+  width: 26px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  margin-right: 12px;
+}
+.slider {
+  width: 26px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 10%;
+}
+.slider:not(:last-child) {
+  margin-right: 12px;
+}
+
+.header_profile_card {
+  position: absolute;
+  top: 44px;
+  left: 20px;
+}
+.sity_profile_card {
+  display: flex;
+  align-items: center;
+}
+.sity_profile_card img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.sity_profile_card p {
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.preference_profile_card {
+  margin-top: 10px;
+}
+.preference_profile_card ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preference_profile_card li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(33, 33, 33, 1);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  padding: 4px 8px;
+  gap: 4px;
+}
+.preference_profile_card li:not(:last-child) {
+  margin-right: 4px;
+}
+.bottom_card_profile {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+.bottom_card_profile_name {
+  font-size: var(--font-line-m);
+}
+.bottom_card_profile_info {
+  margin-top: 7px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+.bottom_card_profile_button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom_card_profile_button button:nth-child(1) {
+  all: unset;
+  width: 171px;
+  height: 46px;
+  background-color: rgba(255, 255, 255, 0.2); /* Стиль для первой кнопки */
+  font-size: 16px;
+  border-radius: 59px;
+  margin-right: 20px;
+  display: flex; /* Включаем flexbox */
+  justify-content: center; /* Центрируем текст по горизонтали */
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+.bottom_card_profile_button button:nth-child(1) p {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.bottom_card_profile_button button:nth-child(2) {
+  all: unset;
+  background-color: rgba(255, 255, 255, 1); /* Стиль для первой кнопки */
+  width: 171px;
+  height: 46px;
+  font-size: 16px;
+  border-radius: 59px;
+  gap: 10px;
+  display: flex; /* Включаем flexbox */
+  justify-content: center; /* Центрируем текст по горизонтали */
+  align-items: center;
+  font-size: 24px;
 }

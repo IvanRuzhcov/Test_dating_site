@@ -3,6 +3,7 @@ import React, { Suspense } from 'react';
 import './styles/index.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppRouter } from './providers/router';
+import { NavBar } from 'widgets/NavBar/NavBar';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <div className="content-page">
           <AppRouter />
         </div>
+        <NavBar/>
       </Suspense>
     </div>
   );
