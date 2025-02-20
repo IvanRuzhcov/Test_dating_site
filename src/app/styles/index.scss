@@ -1,0 +1,25 @@
+@use './reset';
+@use './variables/global';
+@use './themes/normal';
+
+.app {
+  font: var(--font-m);
+  background: var(--color-dark-gray);
+  color: var(--color-warm-white);
+  min-height: 100vh;
+}
+
+.content-page {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  all: unset;
+  margin: 0 auto;
+  display: flex;
+}
+.content-page::-webkit-scrollbar {
+  display: none; /* Для Chrome, Safari и Opera */
+}
+
+.page-wrapper {
+  flex-grow: 1;
+}
