@@ -1,3 +1,13 @@
+.NavBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  background-color: rgba(15, 15, 15, 1);
+  border-top: 1px solid var(--, rgba(28, 28, 28, 1));
+  padding-bottom: 36px;
+}
 .nav_container {
   display: flex;
   justify-content: space-between;
@@ -6,6 +16,7 @@
 }
 .nav_button,
 .nav_button_questionnaire {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,4 +39,22 @@
 
 .nav_button_questionnaire p {
   color: rgba(41, 144, 255, 1);
+}
+.notification {
+  width: 19px;
+  height: 10px;
+  position: absolute;
+  background-color: red;
+  border-radius: 39px;
+  top: 0;
+  right: 0;
+}
+.notification p {
+  font-family: 'Roboto';
+  color: rgba(170, 170, 170, 1);
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 9px;
+  margin: 0 auto;
+  transform: translateY(1px);
 }

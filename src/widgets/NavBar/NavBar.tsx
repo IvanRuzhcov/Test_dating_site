@@ -1,10 +1,10 @@
 import React from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './NavBar.module.scss';
-import chat from '../../assets/icons/chat.png';
-import profile from '../../assets/icons/profile.png';
-import heard from '../../assets/icons/heard.png';
-import questionnaire from '../../assets/icons/questionnaire.png';
+import chat from 'shared/assets/icons/chat.png';
+import profile from 'shared/assets/icons/profile.png';
+import heard from 'shared/assets/icons/heard.png';
+import questionnaire from 'shared/assets/icons/questionnaire.png';
 
 interface NavBarProps {
   className?: string;
@@ -21,6 +21,9 @@ export const NavBar = ({ className }: NavBarProps) => {
         <div className={cls.nav_button}>
           <img src={heard} alt="" />
           <p>Симпатии</p>
+          <div className={cls.notification}>
+            <p>+99</p>
+          </div>
         </div>
         <div className={cls.nav_button_questionnaire}>
           <img src={questionnaire} alt="" />
