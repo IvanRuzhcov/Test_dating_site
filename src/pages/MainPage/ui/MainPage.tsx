@@ -186,8 +186,8 @@ const MainPage = ({ className }: MainPageProps) => {
               <hr />
             <div className={cls.profile_details_preferences_block}>
           
-              <div>🍸 Бар</div>
-              <div>🌭 Стритфуд</div>
+              <p>🍸 Бар</p>
+              <p>🌭 Стритфуд</p>
 
             </div>
 

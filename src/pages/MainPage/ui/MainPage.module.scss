@@ -108,12 +108,18 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+
+
+
 .background_image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
+
 .profile_card_img_active,
 .profile_card_img {
   position: relative;
@@ -140,6 +146,7 @@ li {
   height: 441px;
   border-radius: 20px;
   object-fit: cover;
+  
 }
 
 .profile_card_slider {
@@ -329,7 +336,7 @@ hr {
 .profile_details_preferences_block {
   display: flex;
 }
-.profile_details_preferences_block div {
+.profile_details_preferences_block p {
   background-color: rgba(33, 33, 33, 1);
   border-radius: 8px;
   margin-right: 4px;
@@ -345,8 +352,158 @@ hr {
   letter-spacing: 0.1px;
 }
 
-.profile_details_profile_info{
-margin: 20px 0;
+.profile_details_profile_info {
+  margin: 20px 0;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header_button p {
+    font-size: 16px;
+  }
+  .header__top {
+    margin: 0 40px;
+  }
+  .header__bottom {
+    margin: 17px 40px;
+  }
+  .header__bottom_icon_button {
+    width: 38px;
+    height: 38px;
+  }
+  .header__bottom_right p {
+    font-size: 16px;
+  }
+  .profile_card {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+  }
+  .profile_card_img {
+    width: 85vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile_card_img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0) 30%,
+      rgba(0, 0, 0, 0) 70%,
+      rgba(0, 0, 0, 0.4)
+    );
+    pointer-events: none; /* Чтобы затемнение не мешало кликам */
+  }
+  .slider,
+  .slider_active {
+    width: 30px;
+    height: 5px;
+  }
 
+  .header_profile_card {
+    position: absolute;
+    top: 44px;
+    left: 70px;
+  }
+  .header_profile_card_active {
+    position: absolute;
+    top: 44px;
+    left: 70px;
+  }
+
+  .header_profile_card_active .sity_profile_card img {
+    width: 34px;
+    height: 34px;
+  }
+  .preference_profile_card li {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  .header_profile_card_active .sity_profile_card img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .sity_profile_card img {
+    margin-right: 4px;
+  }
+  .sity_profile_card p {
+    font-size: 18px;
+  }
+  .bottom_card_profile {
+    left: 70px;
+    right: 70px;
+  }
+
+  .bottom_card_profile_actibe {
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+  }
+
+  .bottom_card_profile_button button:nth-child(1) {
+    all: unset;
+    width: 271px;
+    height: 76px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    border-radius: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .background_image {
+    border-radius: 20px;
+  }
+
+  .bottom_card_profile_button button:nth-child(2) {
+    all: unset;
+    background-color: rgba(255, 255, 255, 1);
+    width: 271px;
+    height: 76px;
+    font-size: 16px;
+    border-radius: 59px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .background_image_active {
+    width: 85vw;
+    height: 641px;
+    border-radius: 20px;
+    object-position: center -100px;
+  }
+  .header__bottom_active p {
+    font-size: 20px;
+  }
+  .profile_details_block {
+    margin: 25px 60px 0 60px;
+  }
+  .header_profile_details {
+    font-size: 17px;
+  }
+  .district p {
+    font-size: 13px;
+  }
+  .profile_details_text {
+    font-size: 16px;
+  }
+  .profile_details_preferences_block p {
+    font-size: 13px;
+  }
+  .profile_details_profile_info {
+    margin-bottom: 50px;
+  }
+}
