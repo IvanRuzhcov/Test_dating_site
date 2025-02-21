@@ -9,7 +9,7 @@ import sity from 'shared/assets/icons/sity.png';
 import ghost from 'shared/assets/icons/ghost.png';
 import arm from 'shared/assets/icons/arm.png';
 import heart from 'shared/assets/icons/purple_heart.png';
-import victoria from 'shared/assets/img/victoria.png';
+// import victoria from 'shared/assets/img/victoria.png';
 import left_arrow from 'shared/assets/icons/left_arrow.png';
 interface MainPageProps {
   className?: string;
@@ -17,7 +17,7 @@ interface MainPageProps {
 
 const woman = {
   name: 'Виктория',
-  photo: [victoria, victoria, victoria],
+  // photo: [victoria, victoria, victoria],
   age: 20,
   sity: 'Санкт Петербург',
   about_me:
@@ -97,13 +97,13 @@ const MainPage = ({ className }: MainPageProps) => {
               active ? cls.profile_card_img_active : cls.profile_card_img
             }
           >
-            <img
+            {/* <img
               src={victoria}
               alt=""
               className={
                 active ? cls.background_image_active : cls.background_image
               }
-            />
+            /> */}
           </div>
           <div className={cls.profile_card_slider}>
             <div className={cls.slider_active}></div>
